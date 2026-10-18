@@ -1,0 +1,361 @@
+/* ตั้งค่าพื้นฐานของหน้าเว็บ */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #333333;
+  margin: 0;
+  padding: 30px 15px;
+  line-height: 1.6;
+}
+
+/* กล่องเนื้อหาหลัก */
+.container {
+  max-width: 850px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+h1, h2 {
+  color: #1e3a8a;
+}
+
+hr {
+  border: none;
+  border-top: 2px dashed #cbd5e1;
+  margin: 25px 0;
+}
+
+/* การจัดตารางโปรไฟล์ และเฉลย Challenge: ทำให้รูปกับ Text ห่างกัน */
+.profile-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* ทำรูปโปรไฟล์ให้เป็นวงกลม และเว้นระยะห่างจากข้อความด้วย margin-right */
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #3b82f6;
+  margin-right: 30px; /* ทำให้รูปกับ Text ห่างกัน */
+}
+
+.profile-info h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.profile-info p {
+  margin: 5px 0;
+}
+
+/* ปุ่มกด (Button) */
+.btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 20px;
+  background-color: #2563eb;
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-secondary {
+  background-color: #64748b;
+  margin-left: 10px;
+}
+
+.btn-secondary:hover {
+  background-color: #475569;
+}
+
+/* รายการอาหารที่ชอบ */
+.fav-list {
+  padding-left: 25px;
+}
+
+.fav-list li {
+  margin-bottom: 8px;
+}
+
+/* ตารางประสบการณ์การทำงาน */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #cbd5e1;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.data-table th {
+  background-color: #eff6ff;
+  color: #1e3a8a;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+/* ตาราง Skills 4 คอลัมน์ */
+.skills-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #cbd5e1;
+}
+
+.skills-table td {
+  border: 1px solid #cbd5e1;
+  padding: 12px 15px;
+  width: 25%; /* แบ่ง 4 คอลัมน์เท่าๆ กัน */
+}
+
+.stars {
+  letter-spacing: 2px;
+}
+
+/* ฟอร์มหน้า Contact */
+.contact-form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+/* ส่วน Footer */
+footer {
+  margin-top: 35px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+  text-align: center;
+}
+
+footer a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 8px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 13px;
+  color: #64748b;
+  margin-top: 8px;
+}
+
+/* =========================================
+   ส่วนตกแต่งหน้า Contact (contact.html) เพิ่มเติม
+   ========================================= */
+
+/* ส่วนหัวหน้า Contact */
+.contact-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-badge {
+  display: inline-block;
+  background-color: #dbeafe;
+  color: #1d4ed8;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.contact-header h1 {
+  margin: 5px 0 10px;
+  font-size: 30px;
+}
+
+.contact-header p {
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* การ์ดแสดงข้อมูลติดต่อ 3 ช่อง */
+.contact-info-grid {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  flex: 1 1 220px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 18px 15px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.1);
+  border-color: #bfdbfe;
+}
+
+.info-icon {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.info-card h3 {
+  margin: 0 0 5px;
+  font-size: 16px;
+  color: #1e3a8a;
+}
+
+.info-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #475569;
+}
+
+.info-card a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.info-card a:hover {
+  text-decoration: underline;
+}
+
+/* กรอบรอบฟอร์มติดต่อ */
+.form-wrapper {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 28px;
+}
+
+.form-wrapper h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  border-left: 4px solid #2563eb;
+  padding-left: 12px;
+}
+
+/* จัดช่องกรอกชื่อและอีเมลให้อยู่บรรทัดเดียวกัน */
+.form-row {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.form-row .form-group {
+  flex: 1 1 250px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 7px;
+  color: #1e293b;
+  font-size: 14px;
+}
+
+.required {
+  color: #ef4444;
+}
+
+/* ตกแต่งช่อง Input, Select และ Textarea */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+  background-color: #ffffff;
+  color: #334155;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* เอฟเฟกต์ขอบเรืองแสงสีฟ้าเมื่อคลิกพิมพ์ */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* จัดกลุ่มปุ่มกดด้านล่างฟอร์ม */
+.form-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.btn-submit {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+}
+
+.btn-submit:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  transform: translateY(-1px);
+}
+
+.btn-reset {
+  background-color: #e2e8f0;
+  color: #334155;
+  font-weight: 600;
+}
+
+.btn-reset:hover {
+  background-color: #cbd5e1;
+}
