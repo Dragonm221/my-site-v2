@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Page v2 - Profile</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- ส่วนหัว: รูป Profile วงกลม และข้อมูลส่วนตัว จัด Layout ด้วย Table -->
+    <table class="profile-table">
+      <tr>
+        <td>
+          <!-- เปลี่ยน src เป็นไฟล์รูปของคุณ หรือใช้ URL รูปภาพ -->
+          <img src="O.jpg" alt="Profile Picture" class="profile-img">
+        </td>
+        <td class="profile-info">
+          <h1>วัชพล ภิรมย์นา (Watchapon Piromna)</h1>
+          <p><strong>ตำแหน่ง:</strong> นักศึกษาชั้นปีที่ 2 (Full Stack Web Developer Trainee)</p>
+          <p><strong>สาขาวิชา:</strong> วิศวกรรมคอมพิวเตอร์และปัญญาประดิษฐ์ (CAI)</p>
+          <p><strong>สถาบันการศึกษา:</strong> สถาบันการจัดการปัญญาภิวัฒน์ (Panyapiwat Institute of Management)</p>
+          <!-- ปุ่มเข้าสู่หน้าการติดต่อ -->
+          <a href="contact.html" class="btn">ติดต่อฉัน (Contact Me)</a>
+        </td>
+      </tr>
+    </table>
+
+    <hr>
+
+    <!-- ส่วน About Me -->
+    <section>
+      <h2>About Me</h2>
+      <p>
+        สวัสดีครับ ผมเป็นนักศึกษาที่มีความสนใจด้านการพัฒนาเว็บไซต์แบบ Full Stack 
+        ชอบเรียนรู้เทคโนโลยีใหม่ๆ ทั้งด้าน Frontend และ Backend รวมถึงการออกแบบหน้าเว็บให้สวยงามและใช้งานง่าย
+      </p>
+    </section>
+
+    <hr>
+
+    <!-- สิ่งที่ชอบทาน 3 อย่าง (ใช้ ul หรือ ol) -->
+    <section>
+      <h2>สิ่งที่ชอบทาน 3 อย่าง (Favorite Foods)</h2>
+      <ol class="fav-list">
+        <li>ข้าวผัดกะเพราหมูกรอบไข่ดาว</li>
+        <li>ก๋วยเตี๋ยวเส้นเล็กต้มยำ</li>
+        <li>ชาบลูเบอร์รี่</li>
+      </ol>
+    </section>
+
+    <hr>
+
+    <!-- ประสบการณ์การทำงาน (Experience) -->
+    <section>
+      <h2>ประสบการณ์การทำงาน (Experience)</h2>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Work Place</th>
+          </tr>
+        </thead>
+        <tbody>    
+          <tr>
+            <td>2024</td>
+            <td>Royal Police Cadet Academy (ทำงานด้านเอกสาร)</td>
+          </tr>      
+          <tr>
+            <td>2026</td>
+            <td>7-Eleven</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr>
+
+    <!-- ส่วนของ Skills และระดับพลัง (Table 4 Columns) -->
+    <section>
+      <h2>Skills</h2>
+      <table class="skills-table">
+        <tr>
+          <td>Java Programming</td>
+          <td class="stars">⭐⭐⭐</td>
+          <td>English</td>
+          <td class="stars">⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>SQL</td>
+          <td class="stars">⭐⭐</td>
+          <td>日本語</td>
+          <td class="stars">⭐</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- ส่วน Footer ใส่ลิงก์ GitHub และ contact.html -->
+    <footer>
+      <p>
+        <a href="https://github.com/" target="_blank">GitHub ของฉัน</a> | 
+        <a href="contact.html">หน้าติดต่อ (Contact Me)</a>
+      </p>
+      <p class="copyright">&copy; 2026 My Page v2 - PIM Homework #3</p>
+    </footer>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me - My Page v2</title>
+  <!-- เชื่อมต่อไฟล์ styles.css ร่วมกับหน้า index.html -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="container contact-container">
+    <!-- ส่วนหัวของหน้า Contact -->
+    <div class="contact-header">
+      <span class="contact-badge">📬 Get in Touch</span>
+      <h1>ติดต่อฉัน (Contact Me)</h1>
+      <p>หากมีข้อสงสัย สนใจร่วมงาน หรือต้องการพูดคุยแลกเปลี่ยนความรู้ สามารถฝากข้อความไว้ด้านล่างได้เลยครับ</p>
+    </div>
+
+    <!-- กล่องข้อมูลการติดต่อย่อย (3 คอลัมน์) -->
+    <div class="contact-info-grid">
+      <div class="info-card">
+        <div class="info-icon">📍</div>
+        <h3>สถานที่ศึกษา</h3>
+        <p>สถาบันการจัดการปัญญาภิวัฒน์ (PIM)</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">✉️</div>
+        <h3>อีเมล</h3>
+        <p>your-email@stu.pim.ac.th</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">💻</div>
+        <h3>GitHub</h3>
+        <p><a href="https://github.com/" target="_blank">ดูโปรเจกต์ของฉัน</a></p>
+      </div>
+    </div>
+
+    <!-- ส่วนฟอร์มการติดต่อ -->
+    <div class="form-wrapper">
+      <h2>ส่งข้อความถึงฉัน (Send a Message)</h2>
+      <form action="mailto:your-email@stu.pim.ac.th" method="post" enctype="text/plain" class="contact-form">
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">ชื่อ-นามสกุล (Your Name) <span class="required">*</span></label>
+            <input type="text" id="name" name="Name" placeholder="เช่น สมชาย ใจดี" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">อีเมล (Your Email) <span class="required">*</span></label>
+            <input type="email" id="email" name="Email" placeholder="example@email.com" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">หัวข้อเรื่อง (Subject)</label>
+          <select id="subject" name="Subject">
+            <option value="General Inquiry">สอบถามข้อมูลทั่วไป (General Inquiry)</option>
+            <option value="Project Collaboration">ชวนทำโปรเจกต์ / ร่วมงาน (Collaboration)</option>
+            <option value="Internship">ติดต่อเรื่องฝึกงาน (Internship)</option>
+            <option value="Other">อื่นๆ (Other)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">ข้อความ (Message) <span class="required">*</span></label>
+          <textarea id="message" name="Message" rows="5" placeholder="พิมพ์รายละเอียดข้อความของคุณที่นี่..." required></textarea>
+        </div>
+
+        <!-- ปุ่มกดส่งและปุ่มล้างข้อมูล/กลับหน้าแรก -->
+        <div class="form-actions">
+          <button type="submit" class="btn btn-submit">🚀 ส่งข้อความ (Send Message)</button>
+          <button type="reset" class="btn btn-reset">ล้างข้อมูล (Clear)</button>
+          <a href="index.html" class="btn btn-secondary">⬅ กลับหน้าหลัก (Back to Home)</a>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- ส่วน Footer -->
+    <footer>
+      <p>
+        <a href="https://github.com/" target="_blank">GitHub ของฉัน</a> | 
+        <a href="index.html">หน้าหลัก (Home)</a>
+      </p>
+      <p class="copyright">&copy; 2026 My Page v2 - PIM Homework #3</p>
+    </footer>
+  </div>
+
+</body>
+</html>
